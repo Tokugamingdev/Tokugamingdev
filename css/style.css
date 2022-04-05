@@ -1,0 +1,224 @@
+/* style */
+
+body {
+  height: 1000px;
+  font: 16px/28px arial,sans-serif;
+  background-color: white;
+  color: #333333;
+  box-sizing: border-box;
+  
+}
+
+
+nav {
+  display: flex;
+  background-color: white;
+  justify-content: space-around;
+  height: 50px;
+  align-items: center;
+  box-shadow: 2px 2px 15px 1px #eaeaea;
+}
+
+
+
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 40%;
+  justify-content: space-between;
+  
+}
+
+nav ul li a {
+  color: lightgreen;
+  text-decoration: none;
+  display: flex;
+  width: 100px;
+  justify-content: center;
+  
+}
+
+/*humberger menu*/
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 23px;
+  justify-content: space-between;
+
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: lightgreen;
+  border-radius: 3px;
+}
+
+/*responsive*/
+
+/*ukuran untuk tablet*/
+@media screen and (max-width: 768px) {
+  nav ul {
+    width: 50%;
+  }
+  
+  
+  
+  
+}
+
+/*ukuran mobile*/
+@media screen and (max-width: 576px) {
+  .menu-toggle {
+    display: flex;
+  }
+  nav ul {
+    display: none;
+  }
+  
+  
+  
+}
+
+
+.container {
+  max-width: 800px;
+  margin: 1px auto;
+}
+
+
+
+.header {
+  padding: 20px;
+}
+
+
+.judul  {
+  font-weight: bold;
+  color: lightgreen;
+  font-size: 30px;
+  text-shadow: 0px 0px 20px #45d94a,
+              -3px 3px 0px #02e30a,;
+    letter-spacing: 3px;
+}
+
+
+
+
+.hero {
+  height: 250px;
+  background-image: url('../img/hero.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -50px;
+  box-shadow: 2px 2px 10px 1px white;
+  
+  
+  
+}
+
+.main h2 {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+p.penulis {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+p.penulis a {
+  color: lightgreen;
+  text-decoration: none;
+}
+
+p.penulis a:hover{
+  background-color: lightskyblue;
+  color: white;
+  
+}
+
+p.deskripsi {
+  margin-left: 20px;
+  font-family: arial,Sans-Serif;
+  
+  
+}
+
+.main img {
+  width: 280px;
+  display: flex;
+  margin: 10px 20px;
+  border-radius: 7px;
+  box-shadow: 2px 2px 15px 2px #eaeaea;
+}
+
+p.penulis1 {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.container-satu {
+  max-width: 300px;
+  margin: 1 auto;
+  display: flex;
+  box-shadow: 2px 2px 15px 2px #eaeaea;
+  background-color: white;
+  border-radius: 15px;
+
+
+}
+
+.medsos {
+  
+  margin-left: 20px;
+  font-family: arial,verdana,sans-serif;
+  padding:10px;
+  box-sizing: border-box;
+  
+
+
+}
+
+.medsos a {
+  margin-top: 10px;
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.medsos a:hover {
+  background-color: lightskyblue;
+  color: white;
+}
+
+.medsos h4 {
+  font-weight: bold;
+  color: #333;
+}
+
+
+
+/* ini adalah clearfix */
+
+.cf:before,
+.cf:after {
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
